@@ -1,7 +1,18 @@
-div.py-16
-  .m-8
-    h1.font-bold.text-4xl.text-center.my-4(class="text-[#1557FF]") ¡Bienvenido a mi proyecto Vanilla!!!!!!!
+div.relative.isolate.px-.pt-6(class="lg:px-6")
+  div.mx-auto.max-w-2xl.py-32(class="sm:py-48 lg:py-32")
+    div.hidden(class="sm:mb-8 sm:flex sm:justify-center")
+      div.relative.rounded-full.px-3.py-1.text-sm.leading-6.text-gray-600.ring-1(class="ring-gray-900/10.hover:ring-gray-900/20")
+        | Te resolvemos ayer lo que vas a necesitar mañana. 
+        a(href="#" class="font-semibold text-indigo-600")
+          span.absolute.inset-0(aria-hidden="true")
+          | Contactanos 
+          span(aria-hidden="true") &rarr;
+    div.text-center
+      h1.text-4xl.font-bold.tracking-tight.text-indigo-600(class="sm:text-6xl") Somos el primer ensayo en Argentina
+      p.mt-6.text-lg.leading-8.text-gray-600.pb-8 Busque ensayos clínicos por condición, ubicación y tipo de fármaco dependiendo de tu enfermedad.
+      include ../search/searchComponent
+  
+  
+  
+ 
 
-  include ../search/searchComponent
-
-  p.text-center.text-xl Somo el primer buscador en argentina de ensayos clinicos.

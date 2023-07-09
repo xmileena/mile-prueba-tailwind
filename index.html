@@ -14,8 +14,8 @@
   <body>
     <div class="bg-white">
       <header class="absolute inset-x-0 top-0 z-50">
-        <nav class="flex bg-white items-center justify-between p-4 lg:px-8" aria-label="Global">
-          <div class="flex lg:flex-1"><a class="m-1.5.p-1.5" href="#"><span class="sr-only">Your Company</span><img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&amp;shade=600" alt=""></a></div>
+        <nav class="flex bg-white items-center justify-between p-4 lg:px-8 border-b-[1.5px] border-indigo-200" aria-label="Global">
+          <div class="flex lg:flex-1"><a class="m-1.5.p-1.5" href="#"><span class="sr-only">Your Company</span><img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&amp;shade=600" alt=" "></a></div>
           <div class="flex lg:hidden">
             <button class="inline-flex items-center justify-center rounded-md text-gray-700 m-2.5 p-2.5" type="button"><span class="sr-only">Open main menu</span>
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -23,81 +23,93 @@
               </svg>
             </button>
           </div>
-          <div class="hidden lg:flex lg:gap-x-12"><a class="text-sm font-semibold leading-6 text-gray-900" href="#">Product</a><a class="text-sm font-semibold leading-6 text-gray-900" href="#">Features</a><a class="text-sm font-semibold leading-6 text-gray-900" href="#">Marketplace</a><a class="text-sm font-semibold leading-6 text-gray-900" href="#">Company</a></div>
+          <div class="hidden lg:flex lg:gap-x-12"><a class="text-sm font-semibold leading-6 text-gray-900" href="#">Quienes somos</a><a class="text-sm font-semibold leading-6 text-gray-900" href="#">Ensayos </a><a class="text-sm font-semibold leading-6 text-gray-900" href="#">Contactanos</a><a class="text-sm font-semibold leading-6 text-gray-900" href="#">Footer</a></div>
         </nav>
-        <div class="offcanvas" id="offcanvas">
-          <div class="offcanvas-content">
-            <button class="close-button" type="button" id="close-button" aria-label="Cerrar menú">
-              <svg class="h-6 w-6" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M19.4 17.4l-2.8-2.8L12 14.2l-4.6-4.6-2.8 2.8L9.2 12 4.6 16.6l2.8 2.8L12 14.8l4.6 4.6 2.8-2.8L14.8 12z"></path>
-              </svg>
-            </button><a class="p-2 block" href="#">Inicio</a><a class="p-2 block" href="#">Acerca de</a><a class="p-2 block" href="#">Servicios</a><a class="p-2 block" href="#">Contacto</a>
-          </div>
-        </div>
       </header>
     </div>
-    <div class="container-xl flex flex-col gap-32 mx-auto padding-top-32 bg-[#bfdbfe]">
-      <div class="py-16">
-        <div class="m-8">
-          <h1 class="font-bold text-4xl text-center my-4 text-[#1557FF]">¡Bienvenido a mi proyecto Vanilla!!!!!!!</h1>
-        </div>
-        <div class="flex flex-col gap-8 mb-8">
-          <div class="flex mx-8 md:mx-auto md:w-2/4">
-            <input class="w-full  border border-gray-300 px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" placeholder="Buscar">
-            <button class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600" type="submit">
-              <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m-2.92-2.92a7.5 7.5 0 1 1-10.6-10.6 7.5 7.5 0 0 1 10.6 10.6z"></path>
-              </svg>
-            </button>
+    <div class="container-xl flex flex-col mx-auto padding-top-32 bg-[#fdfdfd]">
+      <div class="relative isolate px- pt-6 lg:px-6">
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
+          <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+            <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10.hover:ring-gray-900/20">Te resolvemos ayer lo que vas a necesitar mañana. <a class="font-semibold text-indigo-600" href="#"><span class="absolute inset-0" aria-hidden="true"></span>Contactanos <span aria-hidden="true">&rarr;</span></a></div>
           </div>
-          <div class="flex gap-4 flex-wrap justify-center">
-            <!-- Aquí puedes agregar contenido-->
-            <div class="bg-gray-200 p-2 rounded-md">Contenido </div>
-            <div class="bg-gray-200 p-2 rounded-md">Contenido 2</div>
-            <div class="bg-gray-200 p-2 rounded-md">contenido 3</div>
-            <div class="bg-gray-200 p-2 rounded-md">contenido 2</div>
-            <div class="bg-gray-200 p-2 rounded-md">contenido 5</div>
-            <div class="p-2 rounded-md border-2 border-indigo-500 hover:border-indigo-700">contenido 6</div>
+          <div class="text-center">
+            <h1 class="text-4xl font-bold tracking-tight text-indigo-600 sm:text-6xl">Somos el primer ensayo en Argentina</h1>
+            <p class="mt-6 text-lg leading-8 text-gray-600 pb-8">Busque ensayos clínicos por condición, ubicación y tipo de fármaco dependiendo de tu enfermedad.</p>
+            <div class="flex flex-col gap-8 mb-8">
+              <div class="flex mx-8 md:mx-auto md:w-[459px]">
+                <input class="w-full  border border-gray-300 px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" placeholder="Buscar">
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600" type="submit">
+                  <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m-2.92-2.92a7.5 7.5 0 1 1-10.6-10.6 7.5 7.5 0 0 1 10.6 10.6z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="flex gap-4 flex-wrap justify-center">
+                <!-- Aquí puedes agregar contenido-->
+                <div class="bg-gray-200 p-2 rounded-md">Contenido </div>
+                <div class="bg-gray-200 p-2 rounded-md">Contenido 2</div>
+                <div class="bg-gray-200 p-2 rounded-md">contenido 3</div>
+                <div class="bg-gray-200 p-2 rounded-md">contenido 2</div>
+                <div class="p-2 rounded-md border-2 border-indigo-500 hover:border-indigo-700">contenido 6</div>
+              </div>
+            </div>
           </div>
         </div>
-        <p class="text-center text-xl">Somo el primer buscador en argentina de ensayos clinicos.</p>
       </div>
-      <div class="padding-top-32 bg-[#1da1f2]">
-        <div class="container mx-auto text-center">
-          <div class="flex flex-col gap-4 mb-8">
-            <h1 class="text-red-200">Como funciona?</h1>
-            <p>Encuentra tu ensayo clinico</p>
+      <div class="bg-white py-24 m:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:mx-0">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">Learn how to grow your business with our expert advice.</p>
           </div>
-          <div class="grid grid-cols-1 gap-4 mx-4 mb-32 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 xl:gap-8 xl: mx-32">
-                  <div class="border flex flex-col gap-4">
-                    <div class="max-h-36"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1666919643134-d97687c1826c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""></div>
-                    <div class="px-4 flex flex-col gap-4 pb-4">
-                      <h2>Buscar</h2>
-                      <p class="text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos beatae nulla et enim sequi doloremque</p>
+        </div>
+        <div class="grid grid-cols-1 mx-auto max-w-7xl px-6 sm:mt-16 sm:pt-16 lg:mx-auto lg:grid-cols-3 lg:px-8">
+                <article class="flex max-w-xl flex-col items-start justify-between">
+                  <div class="flex items-center gap-x-4 text-xs">
+                    <time class="text-gray-500" datetime="2020-03-16">Mar 16, 2020</time><a class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600" href="#">Marketing</a>
+                  </div>
+                  <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900"><a class="href">#<span class="absolute inset-0"></span>Boost your conversion rate</a></h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                  </div>
+                  <div class="relative mt-8 flex items-center gap-x-4"><img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
+                    <div class="text-sm leading-6">
+                      <p class="font-semibold text-gray-900"><a class="href">#<span class="absolute inset-0"></span>Michael Foster</a></p>
+                      <p class="text-gray-600">Co-Founder / CTO</p>
                     </div>
                   </div>
-                  <div class="border flex flex-col gap-4">
-                    <div class="max-h-36"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1688748807457-d8926e351596?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""></div>
-                    <div class="px-4 flex flex-col gap-4 pb-4">
-                      <h2>Postulate</h2>
-                      <p class="text-left">sapeeeee</p>
+                </article>
+                <article class="flex max-w-xl flex-col items-start justify-between">
+                  <div class="flex items-center gap-x-4 text-xs">
+                    <time class="text-gray-500" datetime="2020-03-16">Mar 16, 2020</time><a class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600" href="#">Marketing</a>
+                  </div>
+                  <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900"><a class="href">#<span class="absolute inset-0"></span>Boost your conversion rate</a></h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                  </div>
+                  <div class="relative mt-8 flex items-center gap-x-4"><img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
+                    <div class="text-sm leading-6">
+                      <p class="font-semibold text-gray-900"><a class="href">#<span class="absolute inset-0"></span>Michael Foster</a></p>
+                      <p class="text-gray-600">Co-Founder / CTO</p>
                     </div>
                   </div>
-                  <div class="border flex flex-col gap-4">
-                    <div class="max-h-36"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1688658179201-4d99ab1546e9?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""></div>
-                    <div class="px-4 flex flex-col gap-4 pb-4">
-                      <h2>Participa</h2>
-                      <p class="text-left">De esta!!</p>
+                </article>
+                <article class="flex max-w-xl flex-col items-start justify-between">
+                  <div class="flex items-center gap-x-4 text-xs">
+                    <time class="text-gray-500" datetime="2020-03-16">Mar 16, 2020</time><a class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600" href="#">Marketing</a>
+                  </div>
+                  <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900"><a class="href">#<span class="absolute inset-0"></span>Boost your conversion rate</a></h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                  </div>
+                  <div class="relative mt-8 flex items-center gap-x-4"><img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
+                    <div class="text-sm leading-6">
+                      <p class="font-semibold text-gray-900"><a class="href">#<span class="absolute inset-0"></span>Michael Foster</a></p>
+                      <p class="text-gray-600">Co-Founder / CTO</p>
                     </div>
                   </div>
-                  <div class="border flex flex-col gap-4">
-                    <div class="max-h-36"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1688658179201-4d99ab1546e9?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""></div>
-                    <div class="px-4 flex flex-col gap-4 pb-4">
-                      <h2>Participa</h2>
-                      <p class="text-left">De esta!!</p>
-                    </div>
-                  </div>
-          </div>
+                </article>
         </div>
       </div>
       <div class="container mx-auto">
