@@ -1,0 +1,15 @@
+nav.bg-gray-900.text-white
+      .container.mx-auto.px-4.py-3.flex.justify-between.items-center
+        .flex.items-center
+          img(src="ruta_del_logo.png", alt="Logo", class="h-8 w-8 mr-2")
+        
+        div(class="flex md:hidden")
+          button(type="button", class="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300", aria-label="Abrir menú", id="burger-menu")
+            svg(viewBox="0 0 24 24", class="h-6 w-6 fill-current")
+              path(fill-rule="evenodd", d="M3 5h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2zm0 6h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2zm0 6h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z")
+        
+        div(id="nav-menu",class="hidden md:flex md:items-center")
+          a.p-2(href="#") Inicio
+          a.p-2(href="#") Acerca de
+          a.p-2(href="#") Servicios
+          a.p-2(href="#") Contacto

@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "plugins": ["pug"],
+  "rules": {
+    "pug/attributes-assign": "error",
+    "pug/attributes-order": "error",
+    "pug/attributes-quotes": "error",
+    "pug/html-quotes": "error",
+    "pug/no-duplicate-attributes": "error",
+    "pug/no-duplicate-id": "error",
+    "pug/no-duplicate-style": "error",
+    "pug/no-inline-comments": "error",
+    "pug/no-multiple-template-root": "error",
+    "pug/no-undef": "error",
+    "pug/require-default": "error",
+    "pug/require-lang": "error",
+    "pug/single-quotes": "error"
+  }
+}

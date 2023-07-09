@@ -1,0 +1,67 @@
+
+@font-face {
+  font-family: 'apodo-de-la-fuente'; /* Nombre que le asignas a la fuente */
+  src: url('../fonts/baca.ttf') format('truetype'); /* Ruta relativa a la carpeta de fuentes y formato de la fuente */
+}
+
+body {
+  font-family: 'apodo-de-la-fuente', sans-serif; /* Utiliza la fuente definida */
+  font-family: 'poppins', sans-serif;
+}
+
+.menu-open {
+  display: block !important;
+}
+
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.offcanvas.open {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.offcanvas-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 250px;
+  padding: 20px;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.offcanvas.open .offcanvas-content {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.close-button svg {
+  fill: #333;
+}
+
+.padding-top-32 {
+  padding-top: 60px;
+}

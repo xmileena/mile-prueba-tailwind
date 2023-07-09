@@ -1,0 +1,24 @@
+.container.mx-auto
+  // Contenedor de la caja
+  .flex.flex-col.items-center.mx-4(class="sm:flex-row sm:gap-32")
+    div(class="w-1/2 h-1/2")
+      div(class="sm:w-[400px]").mb-4
+        // Div de arriba es la foto
+        img.w-full.h-full.object-cover(src="https://www.unensayoparami.org/img/descarga-ebook.svg", alt="")
+    div.flex.flex-col.gap-4
+      // Div.flex es el padre de los textos
+      .flex.flex-col.gap-1
+        h2 Descarga gratis el manual
+        h1.text-xl.font-bold 10 mitos sobre las enfermedades
+      p ¿Sabías que la investigación médica es la única herramienta que tiene la Ciencia para estudiar nuevos y mejores tratamientos para las enfermedades?
+
+      // Este es el padre del input y de los términos y condiciones
+      .flex.flex-col.gap-2
+        div.flex.items-center.bg-white.p-4.rounded-lg.shadow-sm
+          // Este es el input con el icono de send
+          input.outline-none.w-full.py-2.px-3.border-none.placeholder-gray-500(type="text", placeholder="Ingresa tu mensaje",class="focus\:outline-none focus\:ring-2 focus\:ring-purple-400")
+          button.bg-blue-500.text-white.px-4.py-2.rounded-lg.ml-2(type="submit")
+            // Agregar el ícono de envío
+            svg.h-4.w-4.ml-1.fill-current.text-white(viewBox="0 0 20 20", xmlns="http://www.w3.org/2000/svg")
+              path(d="M12.5 9L4 4V6H3V4L12.5 9ZM20 12.9642L18.1431 12L12.5 8.03585L6.85688 12L5 12.9642V16.7143C5 16.8874 5.11072 17.0498 5.2931 17.1319C5.47547 17.2139 5.66537 17.2064 5.83901 17.1129L12.5 13.0367L19.161 17.1129C19.3346 17.2064 19.5245 17.2139 19.7069 17.1319C19.8893 17.0498 20 16.8874 20 16.7143V12.9642ZM12.5 13.9642L6.85688 17L12.5 20.0359L18.1431 17L12.5 13.9642Z")
+        a.text-center(href="#") Aplica términos y condiciones

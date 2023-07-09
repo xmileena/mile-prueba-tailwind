@@ -1,0 +1,29 @@
+include ../cards/section-two/card.pug
+div(class="padding-top-32 bg-[#1da1f2]")
+  .container.mx-auto.text-center
+    .flex.flex-col.gap-4.mb-8
+      h1.text-red-200 Como funciona?
+      p Encuentra tu ensayo clinico
+
+    //-  "class" es para el responsive, pug no compila cosas como esta:
+    //-  .sm:grid-cols-3, el ":" lo rompe
+    .grid.grid-cols-1.gap-4.mx-4.mb-32(class="sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 xl:gap-8 xl: mx-32")
+      +sectionTwoCard(
+        "https://images.unsplash.com/photo-1666919643134-d97687c1826c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+        "Buscar",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos beatae nulla et enim sequi doloremque")
+
+      +sectionTwoCard(
+        "https://images.unsplash.com/photo-1688748807457-d8926e351596?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "Postulate",
+        "sapeeeee")
+
+      +sectionTwoCard(
+        "https://images.unsplash.com/photo-1688658179201-4d99ab1546e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "Participa",
+        "De esta!!")
+
+      +sectionTwoCard(
+      "https://images.unsplash.com/photo-1688658179201-4d99ab1546e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "Participa",
+      "De esta!!")

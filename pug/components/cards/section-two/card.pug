@@ -1,0 +1,7 @@
+mixin sectionTwoCard(imageSrc, title, content)
+  .border.flex.flex-col.gap-4
+    div.max-h-36
+      img.w-full.h-full.object-cover(src=imageSrc, alt="")
+    .px-4.flex.flex-col.gap-4.pb-4
+      h2= title
+      p.text-left= content
