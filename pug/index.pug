@@ -12,7 +12,9 @@ html(lang="en")
     
     script(src="https://cdn.tailwindcss.com")
   body
-    include components/menu/menuComponent
+    div.bg-white
+      header.absolute.inset-x-0.top-0.z-50
+        include components/menu/menuComponent
 
     //- mb es margin bottom
     .container-xl.flex.flex-col.gap-32.mx-auto(class="padding-top-32 bg-[#bfdbfe]" )

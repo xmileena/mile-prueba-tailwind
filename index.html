@@ -12,27 +12,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <nav class="bg-gray-900 text-white">
-      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-        <div class="flex items-center"><img class="h-8 w-8 mr-2" src="ruta_del_logo.png" alt="Logo"></div>
-        <div class="flex md:hidden">
-          <button class="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300" type="button" aria-label="Abrir menú" id="burger-menu">
-            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-              <path fill-rule="evenodd" d="M3 5h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2zm0 6h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2zm0 6h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z"></path>
-            </svg>
-          </button>
+    <div class="bg-white">
+      <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="flex bg-white items-center justify-between p-4 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1"><a class="m-1.5.p-1.5" href="#"><span class="sr-only">Your Company</span><img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&amp;shade=600" alt=""></a></div>
+          <div class="flex lg:hidden">
+            <button class="inline-flex items-center justify-center rounded-md text-gray-700 m-2.5 p-2.5" type="button"><span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12"><a class="text-sm font-semibold leading-6 text-gray-900" href="#">Product</a><a class="text-sm font-semibold leading-6 text-gray-900" href="#">Features</a><a class="text-sm font-semibold leading-6 text-gray-900" href="#">Marketplace</a><a class="text-sm font-semibold leading-6 text-gray-900" href="#">Company</a></div>
+        </nav>
+        <div class="offcanvas" id="offcanvas">
+          <div class="offcanvas-content">
+            <button class="close-button" type="button" id="close-button" aria-label="Cerrar menú">
+              <svg class="h-6 w-6" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M19.4 17.4l-2.8-2.8L12 14.2l-4.6-4.6-2.8 2.8L9.2 12 4.6 16.6l2.8 2.8L12 14.8l4.6 4.6 2.8-2.8L14.8 12z"></path>
+              </svg>
+            </button><a class="p-2 block" href="#">Inicio</a><a class="p-2 block" href="#">Acerca de</a><a class="p-2 block" href="#">Servicios</a><a class="p-2 block" href="#">Contacto</a>
+          </div>
         </div>
-        <div class="hidden md:flex md:items-center" id="nav-menu"><a class="p-2" href="#">Inicio</a><a class="p-2" href="#">Acerca de</a><a class="p-2" href="#">Servicios</a><a class="p-2" href="#">Contacto</a></div>
-      </div>
-    </nav>
-    <div class="offcanvas" id="offcanvas">
-      <div class="offcanvas-content">
-        <button class="close-button" type="button" id="close-button" aria-label="Cerrar menú">
-          <svg class="h-6 w-6" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M19.4 17.4l-2.8-2.8L12 14.2l-4.6-4.6-2.8 2.8L9.2 12 4.6 16.6l2.8 2.8L12 14.8l4.6 4.6 2.8-2.8L14.8 12z"></path>
-          </svg>
-        </button><a class="p-2 block" href="#">Inicio</a><a class="p-2 block" href="#">Acerca de</a><a class="p-2 block" href="#">Servicios</a><a class="p-2 block" href="#">Contacto</a>
-      </div>
+      </header>
     </div>
     <div class="container-xl flex flex-col gap-32 mx-auto padding-top-32 bg-[#bfdbfe]">
       <div class="py-16">
